@@ -1,0 +1,8 @@
+{
+  "domain": "dev-3l5b0bav.eu.auth0.com",
+  "clientId": "3svB4Xw82KDOOOxfdogfuMS0riREb8LW",
+  "audience": "https://security/api",
+  "trust.store=classpath": "keystore/baeldung.p12",
+  "trust.store.password": "password"
+
+}
