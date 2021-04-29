@@ -25,25 +25,6 @@ export const useAuth0 = ({
             };
         },
         methods: {
-            /*async loginWithPopup(options, config) {
-                this.popupOpen = true;
-
-                try {
-                    await this.auth0Client.loginWithPopup(options, config);
-                    this.user = await this.auth0Client.getUser();
-                    this.isAuthenticated = await this.auth0Client.isAuthenticated();
-                    this.error = null;
-                } catch (e) {
-                    this.error = e;
-                    // eslint-disable-next-line
-                    console.error(e);
-                } finally {
-                    this.popupOpen = false;
-                }
-
-                this.user = await this.auth0Client.getUser();
-                this.isAuthenticated = true;
-            },*/
             async handleRedirectCallback() {
                 this.loading = true;
                 try {
@@ -60,15 +41,9 @@ export const useAuth0 = ({
             loginWithRedirect(o) {
                 return this.auth0Client.loginWithRedirect(o);
             },
-            /*getIdTokenClaims(o) {
-                return this.auth0Client.getIdTokenClaims(o);
-            },*/
             getTokenSilently(o) {
                 return this.auth0Client.getTokenSilently(o);
             },
-            /*getTokenWithPopup(o) {
-                return this.auth0Client.getTokenWithPopup(o);
-            },*/
             logout(o) {
                 return this.auth0Client.logout(o);
             }
